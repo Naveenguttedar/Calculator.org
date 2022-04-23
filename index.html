@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <table>
+          <input type="text" maxlength="12" name="Screen" id="Screen" placeholder="0" />
+        <tr>
+          <td class="specialChar" onclick="clearAll()">AC</td>
+          <td class="specialChar" onclick="pop()">CL</td>
+          <td class="specialChar" onclick="sumUp('%')">%</td>
+          <td class="operator" onclick="sumUp('/')">&#247</td>
+        </tr>
+        <tr>
+          <td class="number" onclick="sumUp('7')">7</td>
+          <td class="number" onclick="sumUp('8')">8</td>
+          <td class="number " onclick="sumUp('9')">9</td>
+          <td class="operator" onclick="sumUp('*')">&#215;</td>
+        </tr>
+        <tr>
+          <td class="number" onclick="sumUp('4')">4</td>
+          <td class="number" onclick="sumUp('5')">5</td>
+          <td class="number" onclick="sumUp('6')">6</td>
+          <td class="operator" onclick="sumUp('-')">&#8722</td>
+        </tr>
+        <tr>
+          <td class="number" onclick="sumUp('1')">1</td>
+          <td class="number" onclick="sumUp('2')">2</td>
+          <td class="number" onclick="sumUp('3')">3</td>
+          <td class="operator" onclick="sumUp('+')">&#43</td>
+        </tr>
+        <tr>
+          <td class="number" colspan="2" onclick="sumUp('0')">0</td>
+          <td class="specialChar" onclick="sumUp('.')">.</td>
+          <td class="operator" onclick="sumUp('=')">=</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+   <script src="app.js"></script>
+</html>
